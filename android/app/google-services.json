@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "522990814725",
+    "firebase_url": "https://clppowercoupon.firebaseio.com",
+    "project_id": "clppowercoupon",
+    "storage_bucket": "clppowercoupon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522990814725:android:fd750d611a015fb5c4be6c",
+        "android_client_info": {
+          "package_name": "tech.blockmanic.clppowercoupon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522990814725-vmhfgq0bn1hets8ekg2k2drfhvv01a09.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tech.blockmanic.clppowercoupon",
+            "certificate_hash": "70946401c4696dd0d497b3752141fab204002428"
+          }
+        },
+        {
+          "client_id": "522990814725-uik8ho8gb2550lemtvtrp80gg4a77ap9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFkzZEtEgdW4jg-wlaMA9OaKyeGyvgcDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522990814725-uik8ho8gb2550lemtvtrp80gg4a77ap9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
