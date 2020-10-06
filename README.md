@@ -2,6 +2,11 @@
 
 A new Flutter project.
 
+Sign in with 
+
+admin@admin.com
+123321
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
