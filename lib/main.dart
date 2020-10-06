@@ -41,10 +41,10 @@ class _MyAppState extends State<MyApp> {
           primaryColor: Color(0xFF112E87),
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        // home: MyHomePage(
-        //     title:
-        //         'CLP Coupon System \n Operator App (Design - 1.2 System 1.0)'),
-        home: OperationMenuScreen()),
+        home: MyHomePage(
+            title:
+                'CLP Coupon System \n Operator App (Design - 1.2 System 1.0)')),
+        // home: OperationMenuScreen()),
     );
   }
 }

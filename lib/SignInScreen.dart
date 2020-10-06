@@ -7,6 +7,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 
+import 'OperationMenuScreen.dart';
+
 final FirebaseAuth _auth = FirebaseAuth.instance;
 
 /// Entrypoint example for various sign-in flows with Firebase.
@@ -149,6 +151,10 @@ class _EmailPasswordFormState extends State<_EmailPasswordForm> {
           .user;
 
       if (user != null) {
+        Navigator.push(context, MaterialPageRoute(
+          builder: (context) => new OperationMenuScreen(),
+          settings: RouteSettings(name: 'SomeScreen'),
+        ));
 
         
       }
