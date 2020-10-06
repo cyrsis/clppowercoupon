@@ -6,6 +6,7 @@ import 'package:flutter_signin_button/button_builder.dart';
 
 import 'Bloc/IntlBloc/intl_bloc.dart';
 import 'Bloc/IntlBloc/intl_event.dart';
+import 'CodeForRedeemScreen.dart';
 import 'OperationMenuScreen.dart';
 import 'RegisterScreen.dart';
 import 'SignInScreen.dart';
@@ -44,7 +45,7 @@ class _MyAppState extends State<MyApp> {
         home: MyHomePage(
             title:
                 'CLP Coupon System \n Operator App (Design - 1.2 System 1.0)')),
-        // home: OperationMenuScreen()),
+        // home: CodeForRedeemScreen()),
     );
   }
 }
