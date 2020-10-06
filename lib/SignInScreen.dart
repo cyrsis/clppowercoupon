@@ -53,10 +53,10 @@ class _SignInScreenState extends State<SignInScreen> {
           scrollDirection: Axis.vertical,
           children: <Widget>[
             _EmailPasswordForm(),
-            _EmailLinkSignInSection(),
-            _AnonymouslySignInSection(),
-            _PhoneSignInSection(Scaffold.of(context)),
-            _OtherProvidersSignInSection(),
+            // _EmailLinkSignInSection(),
+            // _AnonymouslySignInSection(),
+            // _PhoneSignInSection(Scaffold.of(context)),
+            // _OtherProvidersSignInSection(),
           ],
         );
       }),
@@ -100,7 +100,7 @@ class _EmailPasswordFormState extends State<_EmailPasswordForm> {
                   controller: _emailController,
                   decoration: const InputDecoration(labelText: 'Email'),
                   validator: (String value) {
-                    if (value.isEmpty) return 'Please enter some text';
+                    if (value.isEmpty) return 'Please enter your email';
                     return null;
                   },
                 ),
@@ -108,7 +108,7 @@ class _EmailPasswordFormState extends State<_EmailPasswordForm> {
                   controller: _passwordController,
                   decoration: const InputDecoration(labelText: 'Password'),
                   validator: (String value) {
-                    if (value.isEmpty) return 'Please enter some text';
+                    if (value.isEmpty) return 'Please enter your password';
                     return null;
                   },
                   obscureText: true,
@@ -147,6 +147,11 @@ class _EmailPasswordFormState extends State<_EmailPasswordForm> {
         password: _passwordController.text,
       ))
           .user;
+
+      if (user != null) {
+
+        
+      }
 
       Scaffold.of(context).showSnackBar(SnackBar(
         content: Text("${user.email} signed in"),
