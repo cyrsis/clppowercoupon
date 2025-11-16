@@ -1,9 +1,23 @@
 name: clppowercoupon
-description: A new Flutter project.
+description: |
+  CLP Power Coupon - Operator Application
+  A comprehensive cross-platform coupon management and redemption system for operators.
+  Built with Flutter for iOS, Android, and Web platforms.
+
+  Features:
+  - Digital coupon redemption with QR/Barcode scanning
+  - Real-time validation via Firebase
+  - Multi-language support (EN/繁體中文)
+  - Operator dashboard with redemption logs
+  - PWA support for web version
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# Repository and issue tracker
+repository: https://github.com/cyrsis/clppowercoupon
+homepage: https://clppowercoupon.web.app
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -24,30 +38,82 @@ dependencies:
   flutter:
     sdk: flutter
 
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
+  # ============================================================
+  # STATE MANAGEMENT
+  # ============================================================
+  # BLoC pattern implementation for predictable state management
+  # Separates business logic from UI for better testability
   flutter_bloc: 0.19.1
-  cupertino_icons: ^1.0.0
-  firebase_core: 0.5.0
-  firebase_auth: 0.18.1
-  cloud_firestore: 0.14.1
-  sized_context:
-  duration: ^2.0.15
-  fluttertoast: ^7.1.1
-  flutter_signin_button: ^1.1.0
-  csv: ^4.0.3
-  shared_preferences: ^0.5.6
-  animations: 1.1.2
-  simple_animations: ^2.2.2
+
+  # Reactive programming extensions for handling async data streams
   rxdart:
-  google_fonts: ^1.1.0
-  font_awesome_flutter: ^8.8.1
+
+  # ============================================================
+  # FIREBASE BACKEND SERVICES
+  # ============================================================
+  # Core Firebase SDK - Required for all Firebase services
+  firebase_core: 0.5.0
+
+  # User authentication with email/password and social providers
+  firebase_auth: 0.18.1
+
+  # Real-time NoSQL database for coupon data and redemption logs
+  cloud_firestore: 0.14.1
+
+  # ============================================================
+  # DEVICE FEATURES & HARDWARE ACCESS
+  # ============================================================
+  # QR code and barcode scanning for coupon redemption
+  # Primary feature for mobile platforms
   barcode_scan: any
+
+  # Persistent local storage for user preferences and offline data
+  shared_preferences: ^0.5.6
+
+  # ============================================================
+  # UI/UX ENHANCEMENTS
+  # ============================================================
+  # iOS-style icons for consistent design across platforms
+  cupertino_icons: ^1.0.0
+
+  # Material Design icon library with 1000+ icons
+  font_awesome_flutter: ^8.8.1
+
+  # Google Fonts integration for custom typography
+  google_fonts: ^1.1.0
+
+  # Pre-built authentication UI buttons (Google, Facebook, etc.)
+  flutter_signin_button: ^1.1.0
+
+  # Smooth page transitions and widget animations
+  animations: 1.1.2
+
+  # Advanced animation toolkit for custom UI effects
+  simple_animations: ^2.2.2
+
+  # Responsive sizing utilities for different screen sizes
+  sized_context:
+
+  # Native toast notifications for user feedback
+  fluttertoast: ^7.1.1
+
+  # ============================================================
+  # UTILITIES & DATA PROCESSING
+  # ============================================================
+  # CSV file parsing and generation for data export
+  csv: ^4.0.3
+
+  # Duration manipulation for time-based features
+  duration: ^2.0.15
 
 
 dev_dependencies:
   flutter_test:
+    sdk: flutter
+
+  # Integration testing framework for end-to-end testing
+  # Runs tests on real devices or emulators
+  integration_test:
     sdk: flutter
 
 # For information on the generic Dart part of this file, see the
