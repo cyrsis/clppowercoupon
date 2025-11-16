@@ -1,0 +1,53 @@
+{
+  "name": "clppowercoupon",
+  "version": "1.0.0",
+  "description": "CLP Power Coupon - Operator Application. A cross-platform coupon management and redemption system built with Flutter.",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyrsis/clppowercoupon.git"
+  },
+  "author": {
+    "name": "Victor",
+    "email": "victor@budgetapp.works"
+  },
+  "keywords": [
+    "flutter",
+    "coupon",
+    "redemption",
+    "qr-code",
+    "barcode",
+    "firebase",
+    "mobile-app",
+    "web-app",
+    "pwa",
+    "operator-tools"
+  ],
+  "scripts": {
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:debug": "playwright test --debug",
+    "test:e2e:report": "playwright show-report",
+    "test:e2e:codegen": "playwright codegen http://localhost:8080",
+    "install:playwright": "playwright install",
+    "serve": "firebase serve --only hosting",
+    "build:web": "flutter build web",
+    "deploy:web": "npm run build:web && firebase deploy --only hosting",
+    "firebase:init": "./batch/FirebaseWebInit.sh",
+    "lint": "npm run prettier:check",
+    "format": "npm run prettier:write",
+    "prettier:check": "prettier --check 'e2e/**/*.{ts,js,json}'",
+    "prettier:write": "prettier --write 'e2e/**/*.{ts,js,json}'"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.10.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
